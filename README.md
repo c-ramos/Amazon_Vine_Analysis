@@ -1,32 +1,20 @@
 # Amazon Vine Analysis
-Module 16 Challenge
 
-Overview of the analysis: Explain the purpose of this analysis.
+## Overview
+For this project, we were tasked with a larger project: analyzing Amazon reviews written by members of the Amazon Vine program, a service that allows manufacturers and publishers to receive reviews for their products. With access to about 50 datasets, review data on pet products was collected and PySpark was used to conduct the ETL process. The data was then connected to a database hosted by AWS. Once the process was complete an analysis was conducted to determine if there is any bias toward favorable reviews from Vine Members. 
 
-Results: Using bulleted lists and images of DataFrames as support, address the following questions:
+## Results
+![Resources/dataframes.png](https://github.com/c-ramos/Amazon_Vine_Analysis/blob/bc19d51b7592d0b3be50df4199d622dfa92421cc/Resources/dataframes.png)
 
-How many Vine reviews and non-Vine reviews were there?
-How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
-Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+**How many Vine reviews and non-Vine reviews were there?**
+* For the pet products, there were 170 Vine reviews and 3,7840 non-Vine reviews. 
 
-Deliverable 3 Requirements
-Structure, Organization, and Formatting (6 points)
-The written analysis has the following structure, organization, and formatting:
+**How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?**
+* There were 65 5-star Vine reviews and 20,612 non-vine 5-star reviews.
 
-There is a title, and there are multiple sections (2 pt)
-Each section has a heading and subheading (2 pt)
-Links to images are working, and code is formatted and displayed correctly (2 pt).
-Analysis (14 points)
-The written analysis has the following:
+**What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?** 
+*  53.85% of the Vine reviews were 5 star, and 47.34% of the non-Vine reviews were 5 star.
 
-Overview of the analysis of the Vine program:
+## Summary
+As show in the table above, there are only 48% of 5 star Vine reviews in the dataset versus 54% of 5 star non-Vine reviews which suggests that there is no clear bias. There is a disproportionate amount of data because 170 out of 37,840 reviews were from Vine users.
 
-The purpose of this analysis is well defined (3 pt)
-Results:
-
-There is a bulleted list that addresses the three questions for unpaid and paid program reviews (7 pt)
-Summary:
-
-The summary states whether or not there is bias, and the results support this statement (2 pt)
-An additional analysis is recommended to support the statement (2 pt)
